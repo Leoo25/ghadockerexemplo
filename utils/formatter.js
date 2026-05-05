@@ -10,8 +10,6 @@ export const formatCurrency = (amount, currency = 'BRL', locale = 'pt-BR') => {
     throw new TypeError('O valor deve ser um número.');
   }
 
-  const x=10;
-
   return new Intl.NumberFormat(locale, {
     style: 'currency',
     currency: currency,
